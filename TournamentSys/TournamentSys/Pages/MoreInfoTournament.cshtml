@@ -1,0 +1,67 @@
+﻿@page
+@model TournamentSys.Pages.MoreInfoTournamentModel
+@{
+}
+
+
+<link rel="stylesheet" href="~/css/moreInfo.css">
+
+ <h1>Tournament games</h1>
+  <table>
+  <thead>
+    <tr>
+      <th scope="col">First player</th>
+      <th scope="col">Second Player</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+
+  @if (Model.Tournament.Games.Count > 0)
+    {
+        <tbody>
+            
+               @foreach (var game in Model.Tournament.Games)
+                {
+                    <tr>
+                        <td >@game.FirstPlayerNames</td>
+                        <td >@game.SecondPlayerNames</td>
+                        <td >@game.Score</td>
+                    </tr>
+                }
+        </tbody>
+    }
+    else
+    {
+        <caption>The games will be available when the sign in for the tournament is closed.</caption>
+    }
+</table>
+
+<br>
+<h1> Players </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Palyer</th>
+            <th scope="col">Rank</th>
+        </tr>
+    </thead>
+    @if (Model.Tournament.Players.Count > 0)
+    {
+         <tbody>
+        @foreach (var player in Model.Tournament.Players)
+        {
+           <tr>
+              
+           <form method="get">   
+            <td ><button asp-page="Login" class="inTable" name="playerEmail" value="@player.Email">@player.FirstName @player.LastName</button></td>
+           </form>
+            <td >@player.Rank</td>
+          </tr>
+        }
+        </tbody>
+    }
+    else
+     { <caption>No players joined yet.</caption>}
+   
+</table>

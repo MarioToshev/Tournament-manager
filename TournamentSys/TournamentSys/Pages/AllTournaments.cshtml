@@ -1,0 +1,42 @@
+﻿@page
+@model AllTournamentsModel
+@{
+    ViewData["Title"] = "Tournaments";
+}
+<h1>@ViewData["Title"]</h1>
+ <span class="text-danger">@Model.ErrorMessage</span>
+<br />
+<br />
+<form method="get">
+  <div>
+      <button type="submit"  class="btn btn-primary" value="All" name="Filter">All</button>
+       <button type="submit" class="btn btn-primary" value="Available" name="Filter">Available to Join</button>
+      <button type="submit"  class="btn btn-primary" value="Past" name="Filter">Past</button>
+      <button type="submit"  class="btn btn-primary" value="Ongoing" name="Filter">Ongoing</button>
+  </div>
+</form>
+  <div class="container-tournaments">
+    @foreach (var tr in Model.Tournaments)
+    {       
+       <div class="tournament">
+         <form method = "post">    
+            <h5> @tr.Location</h5>
+            <p>Description: @tr.Description</p>
+            <p>Start: @tr.StartDate</p>
+            <p>End: @tr.EndDate</p>
+            <p>Max Players: @tr.MaxPlayers</p>
+            <p>Min Players: @tr.MinPlayers</p>
+            @if (DateTime.Compare(tr.EndDate, DateTime.Now) < 0)
+            {
+               <p class="text-danger"><b>Already ended</b></p>
+            }
+            else
+            {
+               <button class="select" type="submit" name="TournamentId" value="@tr.Id">Join</button>
+            }
+               <button asp-page="MoreInfoTournament" class="select" type="submit" name="TournamentId" value="@tr.Id">MoreInfo</button>
+          </form>
+        </div>
+    }
+
+    </div>

@@ -1,0 +1,15 @@
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\bin\Debug\net6.0\TournamentSysLogic.deps.json
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\bin\Debug\net6.0\TournamentSysLogic.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\bin\Debug\net6.0\ref\TournamentSysLogic.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\bin\Debug\net6.0\TournamentSysLogic.pdb
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\bin\Debug\net6.0\TournamentSysData.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\bin\Debug\net6.0\TournamentSysData.pdb
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.csproj.AssemblyReference.cache
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.AssemblyInfoInputs.cache
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.AssemblyInfo.cs
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.csproj.CoreCompileInputs.cache
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.csproj.CopyComplete
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\ref\TournamentSysLogic.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysLogic\obj\Debug\net6.0\TournamentSysLogic.pdb

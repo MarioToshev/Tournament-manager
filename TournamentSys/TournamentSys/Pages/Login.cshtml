@@ -1,0 +1,104 @@
+﻿@page
+@model TournamentSys.Pages.LoginModel
+@{ 
+}
+
+
+@if (!string.IsNullOrEmpty(Model.player.Email))
+{
+    
+    
+        <link rel="stylesheet" href="~/css/account.css">
+        <h1>Profile</h1>
+        <div class="content-profile-page">
+            <div class="profile-user-page card">
+                <div class="img-user-profile">
+                    <img class="profile-bgHome" src="https://res.cloudinary.com/dxg6ys3z5/image/upload/v1653913713/6zufe9_coverartmanual_du4a5x.jpg" />
+                    <img class="avatar" src="https://res.cloudinary.com/dxg6ys3z5/image/upload/v1653913618/download_lfq7l7.jpg" alt="jofpin"/>
+                </div>
+                <div class="user-profile-data">
+                    <h1>@Model.player.FirstName @Model.player.LastName</h1>
+                </div>
+                <div class="description-profile"><a>Profesional badminton player</a></div>
+                <div class="description-profile"><a>Emalil :@Model.player.Email</a></div>
+                <br>
+
+                <ul class="data-user">
+                    <li><a><strong>@Model.player.Rank</strong><span>Rank</span></a></li>
+                    <li><a><strong>@Model.player.Wins</strong><span>Wins</span></a></li>
+                    <li><a><strong>@Model.player.Loses</strong><span>Losses</span></a></li>
+                </ul>
+            </div>
+            @if (Model.player.Email == Model.loggedUserEmail)
+            {
+                <div class="col-md-4">
+                    <form method="get">                        
+                        <button asp-Page="LogOut" class="btn btn-primary">Log out</button>
+                    </form> 
+                </div>
+            }
+        </div>
+        <h1>Touranments participation</h1>
+        <div class="container-tournaments">
+            @foreach (var tr in Model.Tournaments)
+            {
+                <div class="tournament">
+                    <form method = "post">  
+                        <h5> @tr.Location</h5>
+                        <p>Description: @tr.Description</p>
+                        <p>Start: @tr.StartDate</p>
+                        <p>End: @tr.EndDate</p>
+                        <p>Max Players: @tr.MaxPlayers</p>
+                        <p>Min Players: @tr.MinPlayers</p>
+                        @if (DateTime.Compare(tr.EndDate, DateTime.Now) < 0)
+                        {
+                            <p class="text-danger"><b>Already ended</b></p>
+                        }
+                        <button asp-page="MoreInfoTournament" class="select" type="submit" name="TournamentId" value="@tr.Id">MoreInfo</button>
+                </form>
+                </div>
+            }
+        </div>
+    
+}
+else if (@Model.loggedUserEmail != "")
+{
+    <div class="row">
+        <div>Welcome back @Model.loggedUserEmail</div>
+                         <div class="col-md-4">
+                           <form method="get">                        
+                             <button asp-Page="LogOut" class="btn btn-primary">Log out</button>
+                           </form> 
+                         </div>         
+    </div> 
+
+}
+else 
+    {
+        <div class="row">
+            <h1>Log in</h1>
+            <div class="col-md-4">
+                <form method = "post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="User.Email" class="control-label"></label>
+                        <input asp-for="User.Email" class="form-control" />
+                        <span asp-validation-for="User.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="User.Password" class="control-label"></label>
+                        <input asp-for="User.Password" class="form-control" />
+                        <span asp-validation-for="User.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <span class="text-danger">@Model.ErrorMessage</span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <button asp-page="Login"  type="submit" class="btn btn-primary">Login</button>
+                        <button asp-page="Register" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }

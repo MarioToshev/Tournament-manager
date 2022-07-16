@@ -1,0 +1,12 @@
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\bin\Debug\net6.0\TournamentSysData.deps.json
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\bin\Debug\net6.0\TournamentSysData.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\bin\Debug\net6.0\ref\TournamentSysData.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\bin\Debug\net6.0\TournamentSysData.pdb
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.csproj.AssemblyReference.cache
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.AssemblyInfoInputs.cache
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.AssemblyInfo.cs
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.csproj.CoreCompileInputs.cache
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\ref\TournamentSysData.dll
+C:\Users\Mario\Desktop\New folder (3)\syntassignement-mariotoshev\TournamentSys\TournamentSysData\obj\Debug\net6.0\TournamentSysData.pdb

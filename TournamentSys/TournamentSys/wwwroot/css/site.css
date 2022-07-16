@@ -1,0 +1,51 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+/*Tournament list start*/
+
+.container-tournaments {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.tournament {
+    background-color: sandybrown;
+    margin: 5px;
+    padding: 10px 90px 30px;
+    border-radius: 6px;
+}
+
+
+/*Tournament list end*/
+
+
+
+
+button.inTable {
+    border: none;
+    background: inherit;
+}
+
+.inTable:hover {
+    background: #ffeecc;
+}
+
